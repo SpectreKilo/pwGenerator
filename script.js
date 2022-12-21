@@ -43,7 +43,13 @@ function generatePassword(){
     var uppercaseChar = confirm("Would you like to include uppercase characters?")
 
       if (uppercaseChar == true) {
-        console.log("Uppercase characters")
+        console.log("Uppercase characters included in password.");
+        allCharacters += UPPER
+          generatedPw += UPPER[Math.floor(Math.random() * UPPER.length)];
+      }
+
+      else {
+        console.log("No uppercase characters included in password.")
       }
   }
 }
