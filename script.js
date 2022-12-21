@@ -88,11 +88,8 @@ function generatePassword(){
 
         return generatedPw;
       
-  } else window.alert("You must choose a number between 8 and 128"); {
-    if (lowercaseChar == false && uppercaseChar == false && numericChar == false && symChar == false) {
-      window.alert("You must select of for at least one character option");
-    }
-  }
+  } else window.alert("You must choose a number between 8 and 128"); 
+  
   return;
 }
 // Add event listener to generate button
