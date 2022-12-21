@@ -14,7 +14,39 @@ function writePassword() {
   passwordText.value = password;
 
 }
+//Use prompts to determine password characteristics
+function generatePassword(){
+  // Length prompt to determine how many characters the pw will be.
+  var pwLength = prompt("How many characters do you want the password to be?")
+  console.log("Desired length: " + pwLength + " characters.");
 
+  if (pwLength >=8 && pwLength <=128) {
+    var allCharacters = "";
+    var generatedPw = "";
+
+    // lowercase Characters?
+    var lowercaseChar = confirm("Would you like to include lowercase characters?")
+
+    if (lowercaseChar == true){
+      console.log("Lowercase characters included in password");
+      // += used to add variables together https://www.w3schools.com/js/js_operators.asp
+      allCharacters += lower;
+      // Math.random() used with Math.floor() can be used to return random integers. https://www.w3schools.com/js/js_random.asp 
+      generatedPw += lower[Math.floor(Math.random() * lower.length)];
+    }
+
+    else {
+      console.log("No lowercase characters included in password")
+    }
+
+    // uppercase Characters?
+    var uppercaseChar = confirm("Would you like to include uppercase characters?")
+
+      if (uppercaseChar == true) {
+        console.log("Uppercase characters")
+      }
+  }
+}
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
