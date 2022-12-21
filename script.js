@@ -79,12 +79,21 @@ function generatePassword(){
         }
 
         console.log("The generated password is: " + generatedPw);
+
         // For loop creation referenced https://www.w3schools.com/js/js_loop_for.asp
         for (i = generatedPw.length; i < pwLength; i++) {
           generatedPw += allCharacters[Math.floor(Math.random() * allCharacters.length)]
         }
         console.log("The generated password after for loop: " + generatedPw);
+
+        return generatedPw;
+      
+  } else window.alert("You must choose a number between 8 and 128"); {
+    if (lowercaseChar == false && uppercaseChar == false && numericChar == false && symChar == false) {
+      window.alert("You must select of for at least one character option");
+    }
   }
+  return;
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
