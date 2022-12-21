@@ -51,6 +51,20 @@ function generatePassword(){
       else {
         console.log("No uppercase characters included in password.")
       }
+
+      // numeric Characters?
+      var numericChar = confirm("Would you like to include numeric characters?")
+
+        if(numericChar == true) {
+          console.log("Numeric characters included in password.");
+          allCharacters += numbers
+          generatedPw += numbers[Math.floor(Math.random() * numbers.length)];
+        }
+
+        else {
+          console.log("No numeric characters included in password.")
+        }
+        
   }
 }
 // Add event listener to generate button
