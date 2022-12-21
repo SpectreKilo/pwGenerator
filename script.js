@@ -64,7 +64,26 @@ function generatePassword(){
         else {
           console.log("No numeric characters included in password.")
         }
-        
+
+        // symbol Characters?
+        var symChar = confirm("Would you like to include symbols?")
+
+        if (symChar = true) {
+          console.log("Symbols included in password.");
+          allCharacters += symbols
+          generatedPw += symbols[Math.floor(Math.random() * symbols.length)];
+        }
+
+        else {
+          console.log("No symbols included in password.")
+        }
+
+        console.log("The generated password is: " + generatedPw);
+        // For loop creation referenced https://www.w3schools.com/js/js_loop_for.asp
+        for (i = generatedPw.length; i < pwLength; i++) {
+          generatedPw += allCharacters[Math.floor(Math.random() * allCharacters.length)]
+        }
+        console.log("The generated password after for loop: " + generatedPw);
   }
 }
 // Add event listener to generate button
