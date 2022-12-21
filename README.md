@@ -5,7 +5,7 @@
 | Technology Used         | Resource URL           | 
 | ------------- |:-------------:| 
  
-| CSS     | [https://developer.mozilla.org/en-US/docs/Web/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)      |   
+| Javascript     | [https://developer.mozilla.org/en-US/docs/Web/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)      |   
 | Git | [https://git-scm.com/](https://git-scm.com/)     |    
 
 ## Description 
