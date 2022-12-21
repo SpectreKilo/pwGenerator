@@ -26,8 +26,7 @@ Press the Generate Password button.
 Answer the prompts confirming the types of characters you want in the password.
 ### *Step 3*
 ![Password Generated](/assets/images/pw1.png) 
-Password will be generated
-## Learning Points 
+Password will be generated 
 
 
 
